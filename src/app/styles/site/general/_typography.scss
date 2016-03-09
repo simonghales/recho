@@ -1,0 +1,54 @@
+%font--default {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %font--default;
+}
+
+body {
+  @extend %font--default;
+  font-size: 18px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.text--options {
+  color: #D5DFE9;
+  font-size: 13px;
+  font-weight: 700;
+
+  a {
+    color: #BBCBD9;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #97AAB5;
+      text-decoration: none;
+    }
+
+  }
+
+  .divider {
+    display: inline-block;
+    margin: 0 2px;
+  }
+
+}

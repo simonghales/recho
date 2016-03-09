@@ -1,0 +1,34 @@
+%input--reset {
+  border: 0;
+  background: none;
+  font-size: 1em;
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.input {
+  @extend %input--reset;
+}
+
+.input--light {
+  @include border-radius(5px);
+  @include box-shadow-multi(inset 0 0 5px rgba(149,211,255,0.1));
+  width: 100%;
+  background-color: #FCFDFE;
+  border: 0;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+
+  @include placeholder {
+    color: #A6BDCD;
+  }
+
+  &:focus {
+    background-color: #F2F8FD;
+  }
+
+}

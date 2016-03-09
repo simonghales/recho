@@ -1,0 +1,7 @@
+
+.icon-star:before { content: '\21'; } /* '!' */
+.icon-star-empty:before { content: '\22'; } /* '&quot;' */
+.icon-heart:before { content: '\23'; } /* '#' */
+.icon-heart-empty:before { content: '\24'; } /* '$' */
+.icon-share:before { content: '\27'; } /* ''' */
+.icon-chat:before { content: '\28'; } /* '(' */
