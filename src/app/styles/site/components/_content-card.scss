@@ -1,5 +1,9 @@
 .content-card-wrapper {
 
+  &.type--placeholder {
+    pointer-events: none;
+  }
+
 }
 
 .content-card {
@@ -17,9 +21,33 @@
     color: #4F7AA3;
     font-size: 16px;
     font-weight: 700;
+
+    .type--placeholder & {
+      color: transparent;
+
+      h3 {
+        background-color: #F2F5F7;
+        display: inline-block;
+        width: 100%;
+        max-width: 280px;
+        line-height: 22px;
+      }
+
+    }
+
   }
 
   .content-card__body {
+
+    .type--link & ,
+    .type--placeholder & {
+      background-color: #F8FAFC;
+      //background-color: #F2F5F7;
+    }
+
+    .type--placeholder & {
+      min-height: 230px;
+    }
 
   }
 
@@ -40,9 +68,27 @@
         float: right;
       }
 
+      .type--placeholder & {
+        //visibility: hidden;
+
+        .icon {
+          color: transparent;
+        }
+
+        .count {
+          visibility: hidden;
+        }
+
+      }
+
     }
 
 .content-card__footer {
   margin-top: 10px;
   padding: 0 14px;
+
+  .type--placeholder & {
+    visibility: hidden;
+  }
+
 }

@@ -7,6 +7,8 @@
 @import "styles/resources/mixins";
 @import "styles/resources/reset";
 @import "styles/resources/states";
+@import "styles/resources/animate";
+@import "styles/resources/animate.custom";
 
 @import "styles/resources/variables/general";
 @import "styles/resources/variables/colours";
@@ -24,6 +26,7 @@
 /* Components */
 @import "styles/site/components/content-card";
 @import "styles/site/components/compact-form";
+@import "styles/site/components/link-embed";
 
 
 /* Do not remove the comments below. It's the markers used by gulp-inject to inject

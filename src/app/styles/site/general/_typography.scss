@@ -59,3 +59,16 @@ strong {
   }
 
 }
+
+.anchor-like {
+
+  &.state--active {
+    color: #FB5823;
+
+    &:hover {
+      color: #FB5823;
+    }
+
+  }
+
+}

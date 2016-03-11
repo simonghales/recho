@@ -3,21 +3,18 @@
 
   angular
     .module('recho.cards.directives')
-    .directive('card', card);
+    .directive('cardContentSoundcloud', cardContentSoundcloud);
 
-  function card() {
+  function cardContentSoundcloud() {
 
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/cards/_card.html',
+      templateUrl: 'app/cards/_card.content.soundcloud.html',
       replace: true,
-      scope: {
-        submission: '=',
-        type: '@'
-      },
+      scope: false,
       //link: link,
-      controller: 'CardController',
-      controllerAs: 'cardVM'
+      //controller: 'FooterController',
+      //controllerAs: 'footerVM'
     }
 
     return directive;

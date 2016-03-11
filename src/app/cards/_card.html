@@ -1,21 +1,28 @@
-<div class="content-card-wrapper main-layout__feed__item type--img">
+<div class="content-card-wrapper main-layout__feed__item type--{{::type}}">
   <div class="content-card">
     <div class="content-card__header">
       <h3>
-        <a href="">First still of Rey from Star Wars - The Force Awakens</a>
+        <a href="" ng-bind="::submission.title"></a>
       </h3>
     </div>
-    <card-content-image></card-content-image>
-    <card-content-youtube></card-content-youtube>
+    <card-content-link ng-if="::type === 'link'"></card-content-link>
+    <card-content-image ng-if="::type === 'image'"></card-content-image>
+    <card-content-youtube ng-if="::type === 'youtube'"></card-content-youtube>
+    <card-content-soundcloud ng-if="::type === 'soundcloud'"></card-content-soundcloud>
     <div class="content-card__options">
       <div class="left-buttons">
-        <button class="btn btn-icon-count">
+        <button
+          ng-click="cardVM.toggleStar();"
+          ng-class="{
+            'state--active': cardVM.states.starred
+          }"
+          class="btn btn-icon-count">
           <span class="icon icon-star"></span>
-          <span class="count">353</span>
+          <span class="count" ng-bind="::submission.starred_count | number"></span>
         </button>
         <button class="btn btn-icon-count">
           <span class="icon icon-chat"></span>
-          <span class="count">17</span>
+          <span class="count" ng-bind="::submission.comments_count | number"></span>
         </button>
       </div>
       <button class="btn btn-icon right-button">
@@ -25,9 +32,19 @@
   </div>
   <div class="content-card__footer">
     <p class="text--options">
-      <a>More Like This</a>
+      <a
+        class="anchor-like"
+        ng-click="cardVM.moreLikeThis();"
+        ng-class="{
+          'state--active': cardVM.states.more
+        }">More Like This</a>
       <span class="divider">-</span>
-      <a>Less Like This</a>
+      <a
+        class="anchor-like"
+        ng-click="cardVM.lessLikeThis();"
+        ng-class="{
+          'state--active': cardVM.states.less
+        }">Less Like This</a>
     </p>
   </div>
 </div>

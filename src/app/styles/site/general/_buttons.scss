@@ -25,7 +25,20 @@
     color: #97AAB5;
   }
 
+  &.state--active {
+    @include transition(color 150ms ease);
+    color: #FB5823;
+
+    .icon {
+      animation: pulseBig 200ms cubic-bezier(.825,0,.5,1);
+      background-color: #FB5823;
+      color: #ffffff;
+    }
+
+  }
+
   .icon {
+    @include transition(transform 150ms ease);
     @include border-radius(50%);
     width: 27px;
     height: 27px;
@@ -42,6 +55,7 @@
   @extend .btn-icon;
 
   .count {
+    display: inline-block;
     font-size: 13px;
     font-weight: 700;
   }
@@ -57,4 +71,9 @@
   padding: 12px;
   text-transform: uppercase;
   width: 100%;
+
+  &.state--active {
+    background-color: #1FA3FF;
+  }
+
 }
