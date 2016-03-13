@@ -13,6 +13,12 @@
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'mainVM'
+      })
+      .state('post', {
+        url: '/post',
+        templateUrl: 'app/post/post.html',
+        controller: 'PostController',
+        controllerAs: 'postVM'
       });
 
     $urlRouterProvider.otherwise('/');

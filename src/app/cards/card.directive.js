@@ -12,8 +12,7 @@
       templateUrl: 'app/cards/_card.html',
       replace: true,
       scope: {
-        submission: '=',
-        type: '@'
+        submission: '='
       },
       //link: link,
       controller: 'CardController',

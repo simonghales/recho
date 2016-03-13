@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   @extend %font--default;
+  color: #494D54;
   font-size: 18px;
 }
 
@@ -71,4 +72,13 @@ strong {
 
   }
 
+}
+
+.anchor-subtle {
+  color: #A0AEBD;
+}
+
+.text--comment {
+  line-height: 1.3em;
+  font-size: 14px;
 }

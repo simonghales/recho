@@ -32,3 +32,14 @@
   }
 
 }
+
+.textarea--plain {
+  @extend %input--reset;
+  @include border-radius(4px);
+  width: 100%;
+  resize: none;
+  height: 100px;
+  border: 1px solid #000000;
+  font-size: 14px;
+  padding: 10px;
+}

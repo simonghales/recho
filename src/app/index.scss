@@ -21,12 +21,14 @@
 @import "styles/site/general/typography";
 @import "styles/site/general/buttons";
 @import "styles/site/general/layout";
+@import "styles/site/general/layout.submission";
 @import "styles/site/general/form";
 
 /* Components */
 @import "styles/site/components/content-card";
 @import "styles/site/components/compact-form";
 @import "styles/site/components/link-embed";
+@import "styles/site/components/comments";
 
 
 /* Do not remove the comments below. It's the markers used by gulp-inject to inject
