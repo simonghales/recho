@@ -77,3 +77,24 @@
   }
 
 }
+
+.btn--submit {
+  @include border-radius(3px);
+  background-color: #5FBDFF;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+
+  &.state--active {
+    background-color: #1FA3FF;
+  }
+
+  &.plain {
+    background: none;
+    color: #8EAFD0;
+    padding: 6px;
+  }
+
+}

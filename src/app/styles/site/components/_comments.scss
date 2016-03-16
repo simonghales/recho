@@ -6,6 +6,15 @@
 
 .comments-form {}
 
+  .comments-form__input {
+    display: block;
+    width: 520px;
+    max-width: 100%;
+    resize: both;
+    height: 120px;
+    margin-bottom: 6px;
+  }
+
 .comments {
 
   .comment-wrapper {
@@ -68,6 +77,26 @@
 .comment__body {
   margin: 6px 0;
 }
+
+  .comments__form__input-wrapper {
+    margin-bottom: 6px;
+  }
+
+    .comments__form__input {
+      resize: both;
+      max-width: 100%;
+      width: 100%;
+    }
+
+  .comment-form__options {
+
+
+
+  }
+
+  .comments__form__post {
+    margin-right: 1px;
+  }
 
 .comment__footer {
 
