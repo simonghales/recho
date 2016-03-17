@@ -84,11 +84,22 @@
     }
 
 .content-card__footer {
+  @extend .clearfix;
   margin-top: 10px;
   padding: 0 14px;
 
   .type--placeholder & {
     visibility: hidden;
+  }
+
+  .text--options {
+    float: left;
+  }
+
+  .card--detail {
+    margin-top: -2px;
+    text-align: right;
+    float: right;
   }
 
 }

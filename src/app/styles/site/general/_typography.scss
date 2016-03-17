@@ -82,3 +82,13 @@ strong {
   line-height: 1.3em;
   font-size: 14px;
 }
+
+.text--small {
+  color: #D3DDE4;
+  font-size: 12px;
+
+  span, a {
+    font-weight: 500;
+  }
+
+}
